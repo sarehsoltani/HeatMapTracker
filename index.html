@@ -1,31 +1,5 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css" type="text/css">
-    <style>
-      .map {
-        height: 700px;
-        width: 1200px;
-      }
-    </style>
-    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
-    <title>OpenLayers example</title>
-  </head>
-  <body>
-    <div id="map" class="map"></div>
-    <script type="text/javascript">
-      var map = new ol.Map({
-        target: 'map',
-        layers: [
-          new ol.layer.Tile({
-            source: new ol.source.OSM()
-          })
-        ],
-        view: new ol.View({
-          center: ol.proj.fromLonLat([35.6892, 51.404343]),
-          zoom: 4
-        })
-      });
-    </script>
-  </body>
-</html>
+<div class="mapouter">
+	<div class="gmap_canvas">
+		<iframe width="1200" height="714" id="gmap_canvas" src="https://maps.google.com/maps?q=tehran&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+		<a href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;height:714px;width:1200px;}.gmap_canvas {overflow:hidden;background:none!important;height:714px;width:1200px;}</style>
+</div>
